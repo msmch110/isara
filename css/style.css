@@ -39,7 +39,7 @@ footer{
   height: 32px;
 }
 #submit-area {
-  background-color: rgb(126, 0, 21);
+  background-color: rgb(191 0 0 / 67%);
   height: 64px;
   width: 76px;
   display: flex;
@@ -53,6 +53,7 @@ footer{
 #form-text {
   color: #fff;
   font-size:12px;
+  letter-spacing: 2px;
   font-weight: 100;
 }
 

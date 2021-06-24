@@ -40,7 +40,7 @@ footer{
   margin-top: -1px;
 }
 #submit-area {
-  background-color: rgb(191 0 0 / 67%);
+  background-color: #DA6B64;
   height: 62px;
   padding: 12px;
   display: flex;
@@ -56,6 +56,7 @@ footer{
   font-size:12px;
   letter-spacing: 2px;
   font-weight: 100;
+  text-decoration: none;
 }
 .main-pic-area {
   text-align: center;
@@ -81,12 +82,47 @@ footer{
   line-height: 1em;
 }
 
+/*--------------------------------------
+ section intro まずは２０日間で、
+--------------------------------------*/
 
-
-.orange {
-  height: 200px;
+.intro-area {
+  text-align: center;
   width: 100%;
-  background-color: orange;
+  color: #fff;
+  background-color: #ebb94d;
+  padding: 1rem;
+}
+.top-text {
+  font-size: 14px;
+  margin-bottom: 0.8em;
+}
+.pink {
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 3px;
+  font-weight: 600; 
+  padding: 0 3px;
+  color: #C7254E;
+  background-color: #F9F2F4;
+}
+.intro-area_button {
+  color: #fff;
+  font-size: 20px;
+  background-color: #DA6B64;
+  margin: 25px 20px 10px;
+  padding: 15px 20px;
+  width: 95%;
+  border: none;
+  border-radius: 64px;
+}
+.intro-area_button:hover {
+  cursor: pointer;
+  background-color: #d80f01;
+}
+.text {
+  font-size: 14px;
+  margin: 1.5em;
 }
 
 
@@ -95,10 +131,6 @@ footer{
 
 
 
-
-/*--------------------------------------
- section intro まずは２０日間で、
---------------------------------------*/
 /*--------------------------------------
  section how to get エンジニアとして本当の自由を手に入れるためには？
 --------------------------------------*/

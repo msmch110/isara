@@ -14,6 +14,76 @@ section{
 footer{
   width: 100%;
 }
+h2 {
+  font-size: 18px;
+}
+h3 {
+  font-size: 15px;
+}
+p {
+  font-size: 15px;
+  font-weight: 100;
+  color: #333;
+}
+.pc {
+  display: none;
+}
+@media screen and(min-width:768px) {
+  .sp {
+    display: none;
+  }
+  .pc {
+    display: block;
+  }
+}
+.frame-box-gold {
+	position: relative;
+}
+
+.frame-box-gold::before, .frame-box-gold::after {
+	content: '';
+	width: 26px;
+	height: 26px;
+	position: absolute;
+}
+
+.frame-box-gold::before {
+	border-left: solid 4px #ebb94d;
+	border-top: solid 4px #ebb94d;
+	top: 0;
+	left: 0;
+}
+
+.frame-box-gold::after {
+	border-right: solid 4px #ebb94d;
+	border-bottom: solid 4px #ebb94d;
+	bottom: 0;
+	right: 0;
+}
+.frame-box-white {
+	position: relative;
+}
+
+.frame-box-white::before, .frame-box-white::after {
+	content: '';
+	width: 26px;
+	height: 26px;
+	position: absolute;
+}
+
+.frame-box-white::before {
+	border-left: solid 4px #fff;
+	border-top: solid 4px #fff;
+	top: 0;
+	left: 0;
+}
+
+.frame-box-white::after {
+	border-right: solid 4px #fff;
+	border-bottom: solid 4px #fff;
+	bottom: 0;
+	right: 0;
+}
 
 /*--------------------------------------
  header 
@@ -31,8 +101,8 @@ footer{
 #logo-area {
   padding: 8px 10px 0;
 }
-#logo-comment {
-  font-size: 12px;
+#logo-text {
+  font-size: 10px;
   font-weight: 600;
 }
 #top-logo {
@@ -67,7 +137,7 @@ footer{
   background-position: top -55px center;
 }
 #logo-big {
-  height: 105px;
+  height: 108px;
   margin: 25px auto 35px;
 }
 .main-copy {
@@ -83,66 +153,272 @@ footer{
 }
 
 /*--------------------------------------
- section intro まずは２０日間で、
+ section registration まずは２０日間で、
 --------------------------------------*/
 
-.intro-area {
+.regist-area {
   text-align: center;
   width: 100%;
   color: #fff;
   background-color: #ebb94d;
-  padding: 1rem;
+  padding: 16px 16px 34px;
 }
 .top-text {
-  font-size: 14px;
-  margin-bottom: 0.8em;
+  font-weight: 600;
+  line-height: 1.6;
+  letter-spacing: 2px;
+  color: #fff;
+  margin-bottom: 0.7em;
 }
 .pink {
   display: inline-block;
   font-size: 14px;
-  border-radius: 3px;
+  border-radius: 5px;
   font-weight: 600; 
   padding: 0 3px;
   color: #C7254E;
   background-color: #F9F2F4;
 }
-.intro-area_button {
+.regist-area_button {
   color: #fff;
   font-size: 20px;
   background-color: #DA6B64;
-  margin: 25px 20px 10px;
+  margin: 25px 20px 27px;
   padding: 15px 20px;
   width: 95%;
   border: none;
   border-radius: 64px;
 }
-.intro-area_button:hover {
+.regist-area_button:hover {
   cursor: pointer;
-  background-color: #d80f01;
+  background-color: #d83e01;
 }
 .text {
-  font-size: 14px;
-  margin: 1.5em;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.6;
+  margin-bottom: 28px;
 }
-
-
-
-
-
-
+.text:last-of-type {
+  margin-bottom: 18px;
+}
+.regist-btn-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.twitter-btn, .good-btn, .share-btn {
+  height: 20px;
+  padding: 0 10px 0 7px;
+  margin-left: 9px;
+  border: none;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  font-size: 11px;
+  color: #fff;
+}
+.twitter-icon {
+  height: 12px;  
+  margin-right: 4px;
+}
+.twitter-btn {
+  background-color: #1b95e0;
+}
+.good-btn {
+  background-color: #3873f1
+}
+.good-icon {
+  margin-right: 4px;
+}
+.share-btn {
+  background-color: #3873f1
+}
 
 /*--------------------------------------
  section how to get エンジニアとして本当の自由を手に入れるためには？
 --------------------------------------*/
+
+.engi-area {
+  padding: 30px 14px 55px;
+  text-align: center;
+  background-image: url(../img/bg-01.jpg);
+  background-size: contain;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+#engi-area-title-box {
+  padding: 25px 0 15px;
+  margin-bottom: 25px;
+}
+.engi-area-title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 2.4;
+}
+.engi-area-text {
+  margin-bottom: 30px;
+}
+.accent{
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+  height:15px;
+  z-index: 5;
+}
+.accent::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-bottom: 5px solid #ebb94d;
+  z-index: -5;
+}
 /*--------------------------------------
  section what's isara ノマドエンジニア育成講座iSara[イサラ]とは
 --------------------------------------*/
+.intro-area {
+  padding: 0 14px 65px;
+  text-align: center;
+  background-color: #fef5e0;
+}
+.about {
+  color: #fff;
+  background-color: #ebb94d;
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  margin: 0 auto;
+  transform: translateY(-50%);
+}
+#intro-area-title-box {
+  padding: 25px 0 20px;
+  margin-bottom: 17px;
+}
+.intro-area-title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 2.4;
+}
+.intro-area-text {
+  color: #000;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.intro-content {
+  background-color: #fff;
+  width: 97%;
+  margin: 0 auto;
+  padding: 10px 10px 15px;
+  border: 2px solid #ebb94d;
+  border-radius: 5px;
+}
+.intro-content-head {
+  margin-bottom: 7px;
+}
+.intro-content-list {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;   
+}
+.intro-content-item {
+  padding: 5px;
+  margin: 5px;
+
+}
+.intro-content-item img {
+  height: 30px;
+}
+.intro-content-item-text {
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
 /*--------------------------------------
  section no basic skill iSaraで「基本的なプログラミングスキル」は教えません
 --------------------------------------*/
+.teaching-area {
+  text-align: center;
+}
+.teaching-area-main {
+  background-image: url(../img/bg-02-sp.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 50px 30px 30px;
+}
+.teacing-area-title {
+  color: #fff;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+.teacing-area-text {
+  font-size: 13px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.teacing-area-text span {
+  color: #ebb94d;
+}
+.teacing-area-text:last-of-type{
+  margin-bottom: 30px;
+}
+.step-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.step-item {
+  background-color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 15px 50px 12px;
+  margin-bottom: 15px;
+}
+.step-no {
+  color: #fff;
+  font-size: 12px;
+  background-color: #ebb94d;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+.step-description {
+  font-size: 14px;
+  line-height: 1.8;
+  font-weight: 600;
+}
+.teaching-area-sub {
+  padding: 20px;
+  background-color: #016ea9;
+}
+.teaching-area-sub p{
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
 /*--------------------------------------
  section what you learn iSara[イサラ]で学べること
 --------------------------------------*/
+.learning-area {
+  
+}
+
+
+
+
 /*--------------------------------------
  section three merit iSara[イサラ]の３つのメリット
 --------------------------------------*/

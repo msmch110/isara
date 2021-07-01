@@ -25,6 +25,9 @@ p {
   font-weight: 100;
   color: #333;
 }
+ul {
+  list-style: none;
+}
 .pc {
   display: none;
 }
@@ -45,6 +48,7 @@ p {
 	width: 26px;
 	height: 26px;
 	position: absolute;
+  z-index: 3;
 }
 
 .frame-box-gold::before {
@@ -69,6 +73,7 @@ p {
 	width: 26px;
 	height: 26px;
 	position: absolute;
+  z-index: 3;
 }
 
 .frame-box-white::before {
@@ -97,6 +102,7 @@ p {
   align-items: center;
   justify-content: space-between;
   background-color: rgba(255, 255, 255, 1);
+  z-index: 5;
 }
 #logo-area {
   padding: 8px 10px 0;
@@ -240,7 +246,7 @@ p {
 --------------------------------------*/
 
 .engi-area {
-  padding: 30px 14px 55px;
+  padding: 30px 13px 55px;
   text-align: center;
   background-image: url(../img/bg-01.jpg);
   background-size: contain;
@@ -264,7 +270,7 @@ p {
   position: relative;
   display: inline-block;
   height:15px;
-  z-index: 5;
+  z-index: 3;
 }
 .accent::after {
   content: "";
@@ -274,14 +280,14 @@ p {
   width: 100%;
   height: 100%;
   display: block;
-  border-bottom: 5px solid #ebb94d;
-  z-index: -5;
+  border-bottom: 4px solid #ebb94d;
+  z-index: 0;
 }
 /*--------------------------------------
  section what's isara ノマドエンジニア育成講座iSara[イサラ]とは
 --------------------------------------*/
 .intro-area {
-  padding: 0 14px 65px;
+  padding: 0 13px 65px;
   text-align: center;
   background-color: #fef5e0;
 }
@@ -300,6 +306,7 @@ p {
   letter-spacing: 2px;
   margin: 0 auto;
   transform: translateY(-50%);
+  z-index: -5;
 }
 #intro-area-title-box {
   padding: 25px 0 20px;
@@ -376,7 +383,6 @@ p {
   margin-bottom: 30px;
 }
 .step-list {
-  list-style: none;
   display: flex;
   flex-direction: column;
 }
@@ -413,27 +419,313 @@ p {
  section what you learn iSara[イサラ]で学べること
 --------------------------------------*/
 .learning-area {
-  
+  text-align: center;
+  padding: 30px 0 35px 0;
 }
-
-
-
+.learning-area-title {
+  font-size: 18px;
+  margin: 20px 0 45px;
+}
+.learning-area-title span {
+  font-size: 12px;box-decoration-break:
+}
+.learning-area-text {
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  color: #333;
+}
+.learning-area-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.learning-area-list-item img {
+  width: 105px;
+  height: 105px;
+  margin: 0 5px;
+}
+.learning-area-btm-text {
+  font-size: 12px;
+  font-weight: 600;
+}
 
 /*--------------------------------------
  section three merit iSara[イサラ]の３つのメリット
 --------------------------------------*/
+.merit-area {
+  background-color: #FEF5E0;
+  padding: 30px 13px 40px;
+  text-align: center;
+}
+#merit-area-title-box {
+  padding: 22px 0 15px;
+}
+.merit-area-subtitle {
+  color: #000;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+.merit-area-title {
+  letter-spacing: 2px;
+}
+.merit-list {
+  margin-top: 20px;
+  width: 100%;
+}
+.merit-image-box {
+  height: 120px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.merit-image {
+  width: 100%;
+}
+.merit-item-text-box {
+  padding: 0 20px 20px;
+}
+.merit-item-head {
+  color: #ebb94d;
+  padding: 12px 0 11px;
+  letter-spacing: 2px;
+}
+.merit-item-text {
+  font-size: 12px;
+  text-align: justify;
+  letter-spacing: 2px;
+}
+.merit-content {
+  background-color: #fff;
+  width: 97%;
+  margin: 0 auto 16px;
+  padding: 14px 14px 18px;
+  border: 2px solid #ebb94d;
+  border-radius: 5px;
+}
+.merit-content-head {
+  font-size: 18px;
+  color: #ebb94d;
+  margin-bottom: 14px;
+}
+.merit-content-text {
+  font-size: 15px;
+  font-weight: 600;
+  color: #000;
+  letter-spacing: 1px;
+  margin-bottom: 14px;
+}
+.merit-content-description{
+  font-size: 10px;
+  font-weight: 600;
+  color: #000;
+}
+.merit-area-btm-text {
+  font-size: 12px;
+}
 /*--------------------------------------
  section foundation member 創業メンバー
 --------------------------------------*/
+.member-area {
+  background-image: url(../img/bg-03-sp.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 70px 10px 20px
+}
+.member-area-title::before{
+  content: "";
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin-right: 2px;
+  background-image: url(../img/namecard-icon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  vertical-align: middle;
+}
+.member-area-text {
+  font-size: 12px;
+  color: #fff;
+  margin: 45px auto 0;
+}
+.found-member-list {
+  width: 100%;
+}
+.found-member-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  transform: translateY(40px);
+}
+.found-member-info {
+  padding: 38px 12px 18px;
+  border: #fff 3px solid; 
+}
+.member-type {
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-bottom: 14px;
+}
+.member-name {
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-bottom: 14px;
+}
+.member-intro {
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-align: justify;
+  font-weight: 100;
+}
 /*--------------------------------------
  section earn your way ノマドエンジニアとして自由に稼ぐことは「 本当に 」可能なのか？
 --------------------------------------*/
+.possible-area-head {
+  padding: 20px 13px 20px;
+  text-align: center;
+  background-color: #ebb94d;
+  position: relative;
+}
+.possible-area-head::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  transform: translateX(-50%);
+  border: 15px solid transparent;
+  border-top: 15px solid #ebb94d;
+}
+.qa {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ebb94d;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+#possible-area-title-box {
+  padding: 10px 0px 8px;
+}
+.possible-area-title {
+  font-size: 14px;
+  line-height: 3;
+  color: #fff;
+  letter-spacing: 1.5px;
+}
+.possible-area-main {
+  padding: 22px 10px 25px;
+  text-align: center;
+}
+.possible-area-catch {
+  margin-bottom: 10px;
+}
+.possible-area-subcatch {
+  font-size: 12px;
+  margin-bottom: 32px;
+}
+.possible-area-text {
+  font-size: 12px;
+}
+.company-item {
+  padding: 23px 0;
+  display: flex;
+}
+.company-pic {
+  width: 145px;
+  height: 145px;
+  border: 3px solid #ebb94d;
+  margin-right: 17px;
+}
+.company-info-text {
+  font-size: 18px;
+  font-weight: 100;
+  text-align: justify;
+  color: #777;
+  font-style: italic;
+  letter-spacing: 1.5px;
+  padding-right: 5px;
+}
+.company-represent {
+  font-size: 15px;
+  color: #777;
+  font-style: italic;
+  text-decoration: underline;
+  letter-spacing: 1.5px;
+  text-align: justify;
+  margin-top: 8px;
+}
 /*--------------------------------------
  section learning contents iSara[イサラ]で学べる内容
 --------------------------------------*/
 /*--------------------------------------
  section steps 受講の流れ
 --------------------------------------*/
+.flow-area {
+  padding: 50px 15px 60px;
+}
+.flow-area-title {
+  text-align: center;
+  width: 200px;
+  margin: 0 auto;
+}
+.flow-content {
+  margin-top: 50px;
+}
+.flow-content-item {
+  background-color: #fef5e0;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  padding: 10px 12px;
+}
+#skype-head {
+  display: flex;
+  justify-content: space-between;
+}
+.skype-head-left {
+  display: flex;
+  align-items: center;
+
+}
+.flow-item-image {
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  margin-right: 15px;
+}
+.skype-head-text {
+  font-size: 15px;
+}
+.flow-item-text {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.open-close-box {
+  position: relative;
+}
+.arrows {
+  display: block;
+  height: 15px;
+  width: 15px;
+}
+.open {
+  position: absolute
+  top: 15px;
+}
+.close {
+  display: none;
+}
+
+
 /*--------------------------------------
  section why Bangkok
 --------------------------------------*/

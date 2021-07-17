@@ -31,7 +31,7 @@ ul {
 .pc {
   display: none;
 }
-@media screen and (min-width:768px) {
+@media screen and (min-width:769px) {
   .sp {
     display: none;
   }
@@ -89,7 +89,7 @@ ul {
 	bottom: 0;
 	right: 0;
 }
-@media screen and (min-width:768px) {
+@media screen and (min-width:769px) {
   .frame-box-gold, .frame-box-white {
     max-width: 840px;
     margin: 0 auto;
@@ -185,7 +185,7 @@ ul {
   margin: 2px 0;
   transform: rotate(180deg);
 }
-@media screen and (min-width:768px) {
+@media screen and (min-width:769px) {
   #fixed-header-inner {
     padding: 20px 10px;
     max-width: 1190px;
@@ -199,7 +199,7 @@ ul {
     padding: 0;
   }
   #logo-text {
-    font-size: 14px;
+    font-size: 12px;
   }
   #top-logo {
     display: inline-block;
@@ -262,6 +262,14 @@ ul {
     transform: rotate(180deg);
   }
 }
+@media screen and (min-width:1191px) {
+  #logo-text {
+    font-size: 14px;
+  }
+  #form-button-pc {
+    font-size: 14px;
+  }
+}
 /*--------------------------------------
  section registration まずは２０日間で、
 --------------------------------------*/
@@ -302,7 +310,7 @@ ul {
   cursor: pointer;
   background-color: #d83e01;
 }
-.text {
+.regist-area-text {
   font-weight: 600;
   color: #fff;
   line-height: 1.6;
@@ -343,26 +351,44 @@ ul {
 .share-btn {
   background-color: #3873f1
 }
-@media screen and (min-width:768px) {
+@media screen and (min-width:769px) {
   .regist-area {
     padding: 30px 60px 50px;
   }
   .top-text {
     font-size: 16px;
   }
-  .text {
+  .regist-area-text {
     font-size: 18px;
   }
   .regist-area_button {
-    height: 78px;
     font-size: 18px;
+    padding: 25px 0;
     margin-top: 12px;
+  }
+}
+@media screen and (min-width:1191px) {
+  .top-text {
+    font-size: 20px;
+  }
+  .pink {
+    font-size: 18px;
+    margin-bottom: 35px;
+  }
+  .regist-area_button {
+    font-size: 28px;
+    padding: 25px 0;
+    max-width: 1028px;
+    margin-bottom: 70px;
+  }
+  .regist-area-text {
+    font-size: 21px;
+    margin-bottom: 35px;
   }
 }
 /*--------------------------------------
  section how to get エンジニアとして本当の自由を手に入れるためには？
 --------------------------------------*/
-
 .engi-area {
   padding: 30px 13px 55px;
   text-align: center;
@@ -400,13 +426,15 @@ ul {
   display: block;
   z-index: -1;
 }
-@media screen and (min-width:768px) {
+@media screen and (min-width:769px) {
   .engi-area {
     background-size: cover;
-    padding: 40px 0 160px;
+    padding: 40px 20px 160px;
   }
   #engi-area-title-box {
     margin-bottom: 40px;
+    padding: 20px 0 15px;
+    max-width: 860px;
   }
   .engi-area-title {
     font-size: 24px;
@@ -418,6 +446,25 @@ ul {
   }
   .engi-area-text:nth-of-type(2) {
     margin-bottom: 0;
+  }
+  .accent::after {
+    top: 15px;
+    height: 5px;
+  }
+}
+@media screen and (min-width:1191px) {
+  .engi-area-title {
+    font-size: 28px;
+  }
+  .engi-area-text {
+    font-size: 20px;
+  }
+  .engi-area {
+    padding-bottom: 115px;
+  }
+  .accent::after {
+    top: 20px;
+    height: 6px;
   }
 }
 /*--------------------------------------
@@ -488,7 +535,7 @@ ul {
   font-size: 10px;
   letter-spacing: 2px;
 }
-@media screen and (min-width:768px) {
+@media screen and (min-width:769px) {
   .about {
     width: 80px;
     height: 80px;
@@ -501,12 +548,10 @@ ul {
   #intro-area-title-box {
     padding: 40px 0 20px;
     margin-bottom: 17px;
+    max-width: 860px;
   }
   .intro-area-text {
     font-size: 16px;
-  }
-  .intro-content {
-    max-width: 1200px;
   }
   .intro-content-head {
     font-size: 16px;
@@ -530,6 +575,20 @@ ul {
     font-size: 12px;
   }
 }
+@media screen and (min-width:1191px) {
+  .intro-area-title {
+    font-size: 28px;
+  }
+  .intro-area-text {
+    font-size: 20px;
+  }
+  .intro-content {
+    max-width: 1170px;
+  }
+  .intro-content-head {
+    font-size: 20px;
+  }
+}
 /*--------------------------------------
  section no basic skill iSaraで「基本的なプログラミングスキル」は教えません
 --------------------------------------*/
@@ -550,6 +609,8 @@ ul {
 }
 .teacing-area-text {
   font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
   color: #fff;
   margin-bottom: 10px;
 }
@@ -602,7 +663,7 @@ ul {
 .teaching-area-sub-text span{
   color: #ebb94d;
 }
-@media screen and (min-width:768px) {
+@media screen and (min-width:769px) {
   .teaching-area-main {
     background-image: url(../img/bg-02.jpg);
     background-size: cover;
@@ -643,6 +704,42 @@ ul {
     font-size: 16px;
   }
 }
+@media screen and (min-width:1191px) {
+  .teaching-area-main {
+    padding-bottom: 20px;
+  }
+  .teacing-area-title {
+    font-size: 28px;
+    margin-bottom: 28px;
+  }
+  .teacing-area-text {
+    font-size: 20px;
+  }
+  .step-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1170px;
+  }
+  .step-item {
+    margin-right: 18px;
+  }
+  .step-item:last-of-type {
+    margin-right: 0;
+  }
+  .step-no {
+    font-size: 16px;
+  }
+  .step-subject {
+    font-size: 14px;
+  }
+  .step-text {
+    font-size: 16px;
+  }
+  .teaching-area-sub-text {
+    font-size: 20px;
+  }
+}
 /*--------------------------------------
  section what you learn iSara[イサラ]で学べること
 --------------------------------------*/
@@ -677,7 +774,7 @@ ul {
   font-size: 12px;
   font-weight: 600;
 }
-@media screen and (min-width:768px) {
+@media screen and (min-width:769px) {
   .learning-area {
     padding-bottom: 50px;
   }
@@ -706,6 +803,24 @@ ul {
   }
   .learning-area-btm-text {
     font-size: 14px;
+  }
+}
+@media screen and (min-width:1191px) {
+  .learning-area-title {
+    font-size: 28px;
+  }
+  .learning-area-title span {
+    font-size: 16px;
+  }
+  .learning-area-text {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .learning-area-list {
+    margin-bottom: 20px;
+  }
+  .learning-area-btm-text {
+    font-size: 16px;
   }
 }
 /*--------------------------------------
@@ -777,7 +892,21 @@ ul {
 .merit-area-btm-text {
   font-size: 12px;
 }
-@media screen and (min-width:768px) {
+@media screen and (min-width:769px) {
+  .merit-area {
+    padding: 30px 70px 40px;
+  }
+  #merit-area-title-box {
+    padding: 30px 0 20px;
+    margin-bottom: 40px;
+  }
+  .merit-area-subtitle {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .merit-area-title {
+    font-size: 24px;
+  }
   .merit-list {
     display: flex;
     flex-direction: column;
@@ -791,18 +920,10 @@ ul {
     height: 180px;
     width: 300px;
   }
-  #merit-area-title-box {
-    padding: 30px 0 20px;
-  }
-  .merit-area-subtitle {
-    font-size: 16px;
-    font-weight: 600;
-  }
-  .merit-area-title {
-    font-size: 24px;
-  }
   .merit-item-head {
     font-size: 16px;
+    padding: 0;
+    margin: 5px 0 12px;
   }
   .merit-item-text {
     font-size: 14px;
@@ -822,20 +943,68 @@ ul {
     letter-spacing: 1.5px;
   }
 }
-@media screen and (min-width:992px) {
+@media screen and (min-width:993px) {
   .merit-list {
     flex-direction: row;
-    width: 95%;
+    width: 100%;
     margin: 0 auto 50px;
     justify-content: space-between;
   }
-  .merit-item {
-    width: 300px
+  .merit-image {
+    width: 100%;
+    max-width: 300px;
+    height: initial;
   }
   .merit-item-head {
     font-size: 16px;
   }
   .merit-item-text {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width:1191px) {
+  .merit-area {
+    padding: 30px 0px 40px;
+  }
+  .merit-area-subtitle {
+    font-size: 20px;
+  }
+  .merit-area-title {
+    font-size: 28px;
+  }
+  .merit-list {
+    width: 1170px;
+    justify-content: space-around;
+  }
+  .merit-item {
+    width: 360px;
+    margin: 0;
+  }
+  .merit-image {
+    width: 360px;
+    max-width: 360px;
+    height: 180px;
+  }
+  .merit-item-text-box {
+    padding: 0;
+  }
+  .merit-item-head {
+    font-size: 20px;
+    text-align: initial;
+  }
+  .merit-item-text {
+    font-size: 16px;
+  }
+  .merit-content-head {
+    font-size: 28px;
+  }
+  .merit-content-text {
+    font-size: 20px;
+  }
+  .merit-content-description {
+    font-size: 16px;
+  }
+  .merit-area-btm-text {
     font-size: 14px;
   }
 }
@@ -909,7 +1078,7 @@ ul {
 .member-manabu-text:first-of-type {
   margin-bottom: 25px;
 }
-@media screen and (min-width:768px) {
+@media screen and (min-width:769px) {
   .member-area {
     background-image: url(../img/bg-03.jpg);
     background-size: cover;
@@ -944,7 +1113,7 @@ ul {
     font-size: 14px;
   }
 }
-@media screen and (min-width:992px) {
+@media screen and (min-width:993px) {
   .member-area {
     background-image: url(../img/bg-03.jpg);
     background-size: cover;
@@ -989,6 +1158,27 @@ ul {
   .found-member-item {
     margin: 0 15px;
     width: 100%;
+  }
+}
+@media screen and (min-width:1191px) {
+  .member-area-title {
+    font-size: 28px;
+  }
+  .member-area-title::before {
+    width: 36px;
+    height: 36px;
+  }
+  .member-area-text {
+    font-size: 16px;
+  }
+  .member-type {
+    font-size: 16px;
+  }
+  .member-name {
+    font-size: 16px;
+  }
+  .member-intro {
+    font-size: 16px;
   }
 }
 /*--------------------------------------
@@ -1072,21 +1262,29 @@ ul {
   text-align: justify;
   margin-top: 8px;
 }
-@media screen and (min-width:768px) {
+@media screen and (min-width:769px) {
   .qa {
     height: 80px;
     width: 80px;
     font-size: 20px;
   }
+  .possible-area-head {
+    padding: 20px
+  }
   .possible-area-title {
     font-size: 18px;
+    line-height: 2;
+  }
+  #possible-area-title-box {
+    padding: 20px;
+    max-width: 860px;
   }
   .possible-area-head::after {
     border: 25px solid transparent;
     border-top: 25px solid #ebb94d;
   }
   .possible-area-main {
-    padding: 50px 20px 0;
+    padding: 50px 20px 20px;
   }
   .possible-area-catch {
     font-size: 24px;
@@ -1099,7 +1297,6 @@ ul {
     margin-bottom: 5px;
   }
   .company-ex-list {
-    max-width: 950px;
     margin: 0 auto;
   }
   .company-pic {
@@ -1108,8 +1305,23 @@ ul {
     height: initial;
     margin-right: 30px;
   }
-  .company-item-text {
-    width: 60%;
+}
+@media screen and (min-width:993px) {
+  .company-ex-list {
+    max-width: 780px;
+  }
+  .company-item {
+    padding: 0;
+    margin: 40px auto;
+  }
+  .company-pic {
+    width: 245px;
+  }
+}
+@media screen and (min-width:1191px) {
+  .possible-area-title {
+    font-size: 28px;
+    line-height: 1.5;
   }
 }
 /*--------------------------------------
@@ -1169,7 +1381,7 @@ ul {
   font-weight: 600;
   letter-spacing: 1.5px;
 }
-@media screen and (min-width:768px) {
+@media screen and (min-width:769px) {
   .learning-detail-main {
     background-image: url(../img/bg-04.jpg);
     background-size: cover;
@@ -1201,20 +1413,22 @@ ul {
     font-size: 16px;
   }
 }
-@media screen and (min-width:992px) {
+@media screen and (min-width:993px) {
+  .learning-detail-main {
+    padding: 60px 0 70px;    
+  }
   .learning-detail-content-box {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
-    width: 535px;
   }
   .learning-detail-content {
     width: 100%;
     margin: 0 15px;
   }
 }
-@media screen and (min-width:1190px) {
+@media screen and (min-width:1191px) {
   .learning-detail-title {
     font-size: 28px;
   }
@@ -1306,7 +1520,7 @@ ul {
 .person-text:nth-of-type(3) {
   font-weight: 100;
 }
-@media screen and (min-width:768px) {
+@media screen and (min-width:769px) {
   .flow-area {
     padding-bottom: 20px;
   }
@@ -1381,7 +1595,7 @@ ul {
     padding: 0 130px;
   }
 }
-@media screen and (min-width:1190px) {
+@media screen and (min-width:1191px) {
   .flow-area {
     padding-bottom: 40px;
   }
@@ -1450,7 +1664,7 @@ ul {
   letter-spacing: 1.5px;
   color: #fff;
 }
-@media screen and (min-width:768px) {
+@media screen and (min-width:769px) {
   .reason-area {
     background-image: url(../img/bg-05.jpg);
     background-repeat: no-repeat;
@@ -1472,7 +1686,7 @@ ul {
     font-size: 16px;
   }
 }
-@media screen and (min-width:1190px) {
+@media screen and (min-width:1191px) {
   .reason-area {
     padding: 115px 100px 90px;
   }
@@ -1564,7 +1778,7 @@ ul {
   color: #fff;
   letter-spacing: 1.5px;
 }
-@media screen and (min-width:768px) {
+@media screen and (min-width:769px) {
   .present-area {
     padding: 60px 40px 40px; 
   }
@@ -1605,7 +1819,7 @@ ul {
     color: #333
   }
 }
-@media screen and (min-width:992px) {
+@media screen and (min-width:993px) {
   .present-list {
     display: flex;
     flex-direction: row;
@@ -1614,11 +1828,17 @@ ul {
   .present-item-head {
     padding: 0;
   }
+}
+@media screen and (min-width:1191px) {
   .present-area-title {
     font-size: 28px;
   }
   .present-area-text {
     font-size: 16px;
+  }
+  .present-list {
+    max-width: 1170px;
+    margin: 0 auto;
   }
   .present-list-title {
     font-size: 28px;
@@ -1660,8 +1880,39 @@ ul {
   font-size: 12px;
   letter-spacing: 1px;
 }
-@media screen and (min-width:768px) {
-  
+@media screen and (min-width:769px) {
+  .vision-area {
+    background-image: url(../img/bg-06.jpg);
+    padding: 60px 60px 85px;
+  }
+  .vision-area-catch {
+    font-size: 24px;
+  }
+  .vision-area-catch-text {
+    font-size: 16px;
+  }
+  #vision-area-title-box {
+    max-width: 860px;
+  }
+  .vision-area-title {
+    font-size: 24px;
+  }
+  .vision-area-bottom-text {
+    font-size: 16px;
+  }  
+}@media screen and (min-width:1191px) {
+  .vision-area-catch {
+    font-size: 28px;
+  }
+  .vision-area-catch-text {
+    font-size: 20px;
+  }
+  .vision-area-title {
+    font-size: 28px;
+  }
+  .vision-area-bottom-text {
+    font-size: 20px;
+  }  
 }
 /*--------------------------------------
  section message 創業者からのメッセージ
@@ -1693,9 +1944,47 @@ ul {
 #message-middle-list {
   margin: 30px 0;
 }
-
-@media screen and (min-width:768px) {
-  
+@media screen and (min-width:769px) {
+  .message-area {
+    padding: 65px 25px 100px;
+  }
+  .message-area-title {
+    font-size: 24px;
+  }
+  .message-area-sub-title {
+    font-size: 16px;
+    margin-bottom: 60px;
+  }
+  .message-content-image {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width:993px) {
+  .message-content-box {
+    display: flex;
+    align-items: flex-start;
+    max-width: 1058px;
+    margin: 0 auto;
+  }
+  .message-content-image {
+    margin-right: 40px;
+    width: 25%;
+  }
+}
+@media screen and (min-width:1191px) {
+  .message-area {
+    padding-bottom: 80px;
+  }
+  .message-area-title {
+    font-size: 28px;
+  }
+  .message-area-sub-title {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  .message-content-box {
+    max-width: 890px;
+  }
 }
 /*--------------------------------------
  section forms 資料請求フォーム
@@ -1759,8 +2048,35 @@ ul {
   font-weight: 600;
   letter-spacing: 23px;
 }
-@media screen and (min-width:768px) {
-  
+@media screen and (min-width:769px) {
+  .form-area {
+    padding: 60px 150px 70px;
+  }
+  .form-area-title {
+    font-size: 24px;
+  }
+  .form-area-title::before {
+    width: 24px;
+    height: 24px;
+  }
+  .form-area-text {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width:1191px) {
+  .form-area {
+    padding: 60px 250px 70px;
+  }
+  .form-area-title {
+    font-size: 28px;
+  }
+  .form-area-title::before {
+    width: 28px;
+    height: 28px;
+  }
+  .form-area-text {
+    font-size: 16px;
+  }
 }
 /*--------------------------------------
  section q&a よくある質問
@@ -1832,8 +2148,54 @@ ul {
   font-weight: 600;
   letter-spacing: 1px;
 }
-@media screen and (min-width:768px) {
-  
+@media screen and (min-width:769px) {
+  .qa-area {
+    padding: 60px;
+  }
+  .qa-area-title {
+    font-size: 24px;
+  }
+  .qa-list-item-head {
+    padding: 16px;
+  }
+  .qa-list-item-head-text {
+    font-size: 16px;
+  }
+  .qa-list-item-head-text::before {
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+  }
+  .arrow-gray {
+    height: 17px;
+    width: 17px;
+  }
+  .qa-list-item-text {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width:1191px) {
+  .qa-area {
+    padding: 55px 150px;
+  }
+  .qa-area-title {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+  .qa-list-item-head-text {
+    font-size: 20px;
+  }
+  .qa-list-item-head-text::before {
+    width: 18px;
+    height: 18px;
+  }
+  .arrow-gray {
+    height: 21px;
+    width: 21px;
+  }
+  .qa-list-item-text {
+    font-size: 16px;
+  }
 }
 /*--------------------------------------
  footer  
@@ -1847,6 +2209,7 @@ footer {
   font-size: 10px;
   line-height: 17px;
   margin-bottom: 6px;
+  letter-spacing: 1px;
 }
 .footer-text a,
 .creater a {
@@ -1857,7 +2220,10 @@ footer {
   font-size: 10px;
   margin-top: 40px;
   margin-bottom: 6px;
+  letter-spacing: 1px;
 }
-@media screen and (min-width:768px) {
-  
+@media screen and (min-width:769px) {
+  footer {
+    padding: 40px 0 20px;
+  }
 }

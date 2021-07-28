@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -1479,6 +1478,9 @@ ul {
   border-radius: 5px;
   margin-bottom: 5px;
 }
+.isOpen .flow-item-text-box{
+  display: block;
+}
 .flow-item-head {
   display: flex;
   justify-content: space-between;
@@ -1506,6 +1508,9 @@ ul {
 .flow-item-text-box {
   padding: 12px;
   display: none;
+}
+.isOpen {
+  display: block;
 }
 .arrow {
   display: block;

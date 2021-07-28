@@ -1,9 +1,7 @@
 $(function() {
   const clickItem = $('.flow-item-image, .flow-item-head-text, .arrow');
   clickItem.on('click', function(){
-    if($(window).width()>=768) {
-      ;
-    } else {
+    if($(window).width()<768) {
       if($(this).parents('.flow-item').hasClass("isOpen")) {
         $(this).parents('.flow-item').find('.flow-item-text-box').slideUp();
         $(this).parents('.flow-item-head').find($('.arrow')).css({

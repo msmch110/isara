@@ -1509,7 +1509,7 @@ ul {
   padding: 12px;
   display: none;
 }
-.isOpen {
+.isOpen .flow-item-text-box {
   display: block;
 }
 .arrow {
@@ -1517,6 +1517,10 @@ ul {
   height: 15px;
   position: relative;
   top: 15px;
+}
+.isOpen .flow-item-head .arrow {
+  transform: rotate(180deg);
+  top: 0;
 }
 .flow-item-text {
   font-size: 12px;

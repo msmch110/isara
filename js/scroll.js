@@ -1,7 +1,7 @@
 $(function() {
   $('.scroll-top').hide();
   $('.scroll-top').on('click', function(){
-    $('html, body').animate({scrollTop:0}, "300")
+    $('html, body').animate({scrollTop:0}, 300);
   })
   $(window).scroll(function(){
     let scroll = $(this).scrollTop();
